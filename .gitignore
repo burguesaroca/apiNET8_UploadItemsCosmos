@@ -1,224 +1,79 @@
-# .gitignore for a .NET / Visual Studio / VS Code project
-# Tailored for apiNET8_UploadItemsCosmos (.NET 8) projects
+# .gitignore for a .NET project (Visual Studio / VS Code)
 
-## Build outputs
+# Build folders
 /bin/
 /obj/
-**/bin/
-**/obj/
 /out/
-/artifacts/
-/publish/
-/TestResults/
 
-## Visual Studio
-/.vs/
-*.suo
+# Visual Studio
+.vs/
 *.user
+*.suo
 *.userosscache
 *.sln.docstates
-*.VC.db
 
-## Visual Studio Code
-/.vscode/
-*.code-workspace
-
-## Rider / JetBrains
-/.idea/
+# Rider
+.idea/
 *.sln.iml
-*.iml
 
-## NuGet
+# VS Code
+.vscode/
+
+# NuGet
 *.nupkg
-/packages/
-/.nuget/packages/
-project.assets.json
+packages/
+.nuget/
 project.lock.json
+project.fragment.lock.json
+artifacts/
 
-## Dotnet
-*.dbmdl
-*.bak
-*.backup
-*.log
-
-## Publish/Deployment
-*.Publish.xml
-*.pubxml.user
-*.azurePubxml
-
-## User-specific files
-*.user
-*.userprefs
-*.DotSettings.user
-
-## Resharper
-_ReSharper*/
-*.ReSharper
-
-## Rider/IDE caches and local files
-/.idea/
-/.idea/*
-
-## Local development config & secrets
-appsettings.Development.json
-appsettings.Local.json
-connections.json
+# ASP.NET Core
+# Keep appsettings.json in repo, but ignore local overrides
+appsettings.*.Local.json
 secrets.json
-local.settings.json
-secrets.*.json
 
-## Databases
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dotnet publish output
+/publish/
+/publish/**
+
+# Database files
 *.mdf
 *.ldf
 *.db
-*.sqlite
-*.sqlite3
-*.db-journal
+*.db-shm
+*.db-wal
 
-## Logs, coverage, profiling
-*.log
-coverage/
-coverage.*
-*.coverage
-*.coveragexml
-*.opencover
-*.prof
-*.log
+# IIS Express
+\.vs\**\applicationhost.config
 
-## Docker
-docker-compose.override.yml
-.env
+# JetBrains Rider cache
+.idea/**/workspace.xml
+.idea/**/tasks.xml
 
-## Node
-node_modules/
+# Exclude the build outputs for other frameworks (if any left from old builds)
+/bin/**/net6.0/
+/bin/**/net7.0/
+/obj/**/net6.0/
+/obj/**/net7.0/
 
-## OS generated files
-Thumbs.db
-desktop.ini
-.DS_Store
+# Ignore user-specific local settings
+*.local
 
-## Misc
-*.vsix
-*.nupkg
-*.publishsettings
-*.usersecrets
-*.pidb
-*.svclog
-*.pdb
-*.ilk
-*.ipch
-*.obj
-*.iobj
-*.tlog
-# .gitignore for a .NET / Visual Studio / VS Code project
-# Tailored for apiNET8_UploadItemsCosmos (.NET 8) projects
-
-## Build outputs
-/bin/
-/obj/
-**/bin/
-**/obj/
-/out/
-/artifacts/
-/publish/
-/TestResults/
-
-## Visual Studio
-/.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.VC.db
-
-## Visual Studio Code
-/.vscode/
-*.code-workspace
-
-## Rider / JetBrains
-/.idea/
-*.sln.iml
-*.iml
-
-## NuGet
-*.nupkg
-/packages/
-/.nuget/packages/
-project.assets.json
-project.lock.json
-
-## Dotnet
-*.dbmdl
-*.bak
-*.backup
-*.log
-
-## Publish/Deployment
-*.Publish.xml
-*.pubxml.user
-*.azurePubxml
-
-## User-specific files
-*.user
-*.userprefs
-*.DotSettings.user
-
-## Resharper
-_ReSharper*/
-*.ReSharper
-
-## Rider/IDE caches and local files
-/.idea/
-/.idea/*
-
-## Local development config & secrets
-appsettings.Development.json
-appsettings.Local.json
-connections.json
-secrets.json
-local.settings.json
-secrets.*.json
-
-## Databases
-*.mdf
-*.ldf
-*.db
-*.sqlite
-*.sqlite3
-*.db-journal
-
-## Logs, coverage, profiling
-*.log
-coverage/
-coverage.*
-*.coverage
-*.coveragexml
-*.opencover
-*.prof
-*.log
-
-## Docker
-docker-compose.override.yml
-.env
-
-## Node
-node_modules/
-
-## OS generated files
-Thumbs.db
-desktop.ini
-.DS_Store
-
-## Misc
-*.vsix
-*.nupkg
-*.publishsettings
-*.usersecrets
-*.pidb
-*.svclog
-*.pdb
-*.ilk
-*.ipch
-*.obj
-*.iobj
-*.tlog
+# Keep this file tracked
+!/.gitignore
