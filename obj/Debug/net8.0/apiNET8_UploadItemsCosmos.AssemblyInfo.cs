@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("apiNET8_UploadItemsCosmos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0408422e0a7e9038398283df4c6d032d69101f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3633b8e372a89b8abf41858d2e22bbb83e6d0ea5")]
 [assembly: System.Reflection.AssemblyProductAttribute("apiNET8_UploadItemsCosmos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("apiNET8_UploadItemsCosmos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
