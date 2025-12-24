@@ -111,10 +111,14 @@ desktop.ini
 *.iobj
 *.tlog
 # .gitignore for a .NET / Visual Studio / VS Code project
+# Tailored for apiNET8_UploadItemsCosmos (.NET 8) projects
 
 ## Build outputs
 /bin/
 /obj/
+**/bin/
+**/obj/
+/out/
 /artifacts/
 /publish/
 /TestResults/
@@ -125,31 +129,80 @@ desktop.ini
 *.user
 *.userosscache
 *.sln.docstates
+*.VC.db
 
 ## Visual Studio Code
 /.vscode/
+*.code-workspace
 
-## Rider
+## Rider / JetBrains
 /.idea/
+*.sln.iml
+*.iml
 
 ## NuGet
 *.nupkg
 /packages/
+/.nuget/packages/
+project.assets.json
+project.lock.json
 
 ## Dotnet
 *.dbmdl
 *.bak
+*.backup
+*.log
 
-## Local settings and secrets
+## Publish/Deployment
+*.Publish.xml
+*.pubxml.user
+*.azurePubxml
+
+## User-specific files
+*.user
+*.userprefs
+*.DotSettings.user
+
+## Resharper
+_ReSharper*/
+*.ReSharper
+
+## Rider/IDE caches and local files
+/.idea/
+/.idea/*
+
+## Local development config & secrets
 appsettings.Development.json
 appsettings.Local.json
 connections.json
 secrets.json
-*.pem
-*.key
+local.settings.json
+secrets.*.json
 
-## Logs
+## Databases
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+## Logs, coverage, profiling
 *.log
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+*.opencover
+*.prof
+*.log
+
+## Docker
+docker-compose.override.yml
+.env
+
+## Node
+node_modules/
 
 ## OS generated files
 Thumbs.db
@@ -158,4 +211,14 @@ desktop.ini
 
 ## Misc
 *.vsix
-*.userprefs
+*.nupkg
+*.publishsettings
+*.usersecrets
+*.pidb
+*.svclog
+*.pdb
+*.ilk
+*.ipch
+*.obj
+*.iobj
+*.tlog
