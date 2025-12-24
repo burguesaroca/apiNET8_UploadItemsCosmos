@@ -1,0 +1,1 @@
+# apiNET8_UploadItemsCosmos
